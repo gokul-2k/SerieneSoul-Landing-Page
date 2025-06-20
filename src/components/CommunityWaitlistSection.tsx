@@ -1,6 +1,7 @@
 "use client"
 import React from 'react';
-import { Mail, Users } from 'lucide-react';
+import { Mail } from 'lucide-react';
+import Image from 'next/image';
 
 const CommunityWaitlistSection = () => {
   return (
@@ -14,7 +15,7 @@ const CommunityWaitlistSection = () => {
               <div className="bg-white rounded-2xl p-8 text-white text-center shadow-xl transform rotate-3 flex flex-col items-center justify-center">
                 {/* Coming Soon Static Image */}
                 <div className="w-32 h-32 flex items-center justify-center mx-auto">
-                  <img src="/images/coming.png" alt="Coming Soon" className="w-full h-full object-contain" />
+                  <Image src="/images/coming.png" alt="Coming Soon" width={128} height={128} className="w-full h-full object-contain" />
                 </div>
               </div>
             </div>
@@ -23,7 +24,7 @@ const CommunityWaitlistSection = () => {
           {/* Community Content */}
           <div className="space-y-6">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
-              <span className="text-blue-500">Community:</span> You're Not Alone
+              <span className="text-blue-500">Community:</span> You&apos;re Not Alone
             </h2>
             
             <p className="text-gray-700 leading-relaxed text-justify">
@@ -64,9 +65,11 @@ const CommunityWaitlistSection = () => {
             {/* Waitlist Image */}
             <div className="flex justify-center lg:justify-end">
               <div className="relative">
-                <img 
+                <Image 
                   src="/images/med2.jpg" 
                   alt="Person at beach"
+                  width={320}
+                  height={320}
                   className="w-80 h-80 object-cover rounded-full shadow-2xl"
                 />
                 

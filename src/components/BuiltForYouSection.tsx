@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 const BuiltForYouSection = () => {
   return (
@@ -13,7 +14,7 @@ const BuiltForYouSection = () => {
             </h2>
             
             <p className="text-gray-700 leading-relaxed text-lg text-justify">
-              Whether you're a student, working professional, 
+              Whether you&apos;re a student, working professional, 
               caregiver or leader - Sereinsoul.ai is for anyone 
               who wants to be more present, resilient and 
               balanced.
@@ -23,9 +24,11 @@ const BuiltForYouSection = () => {
           {/* Image Side */}
           <div className="flex justify-center lg:justify-end mt-10 lg:mt-0">
             <div className="relative">
-              <img 
+              <Image 
                 src="/images/women2.png" 
                 alt="Woman with laptop"
+                width={384}
+                height={384}
                 className="w-72 h-72 lg:w-96 lg:h-96 object-cover rounded-2xl shadow-xl"
               />
               
@@ -38,7 +41,7 @@ const BuiltForYouSection = () => {
                   <span className="text-sm font-medium text-gray-800">SereinSoul</span>
                 </div>
                 <p className="text-xs text-gray-600">
-                  "How are you feeling today? I'm here to help you navigate through your emotions."
+                  &quot;How are you feeling today? I&apos;m here to help you navigate through your emotions.&quot;
                 </p>
               </div>
             </div>

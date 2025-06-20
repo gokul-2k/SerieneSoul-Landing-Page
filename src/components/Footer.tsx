@@ -1,5 +1,6 @@
 import React from 'react';
 import { Home } from 'lucide-react';
+import Image from 'next/image';
 
 const Footer = () => {
   return (
@@ -19,9 +20,11 @@ const Footer = () => {
             >
               {/* NVIDIA */}
               <div className="flex-shrink-0 flex flex-col items-center space-y-3">
-                <img 
+                <Image 
                   src="/images/nvidia-logo.png" 
                   alt="NVIDIA" 
+                  width={192}
+                  height={96}
                   className="h-24 w-auto object-contain"
                 />
                 {/* <span className="text-xs text-gray-600 uppercase tracking-wide">INCEPTION PROGRAM</span> */}
@@ -29,9 +32,11 @@ const Footer = () => {
               
               {/* Kerala Startup Mission */}
               <div className="flex-shrink-0 flex flex-col items-center space-y-3">
-                <img 
+                <Image 
                   src="/images/kerala-startup-mission-logo.png" 
                   alt="Kerala Startup Mission" 
+                  width={96}
+                  height={96}
                   className="h-24 w-auto object-contain"
                 />
                 {/* <span className="text-xs text-gray-600 uppercase tracking-wide">STARTUP MISSION</span> */}
@@ -39,9 +44,11 @@ const Footer = () => {
               
               {/* MeitY Startup Hub */}
               <div className="flex-shrink-0 flex flex-col items-center space-y-3">
-                <img 
+                <Image 
                   src="/images/MeitY.png" 
                   alt="MeitY Startup Hub" 
+                  width={224}
+                  height={112}
                   className="h-28 w-auto object-contain"
                 />
                 {/* <span className="text-xs text-gray-600 uppercase tracking-wide">Startup Hub</span> */}
@@ -49,9 +56,11 @@ const Footer = () => {
               
               {/* SBI */}
               <div className="flex-shrink-0 flex flex-col items-center space-y-3">
-                <img 
+                <Image 
                   src="/images/sbi-logo.png" 
-                  alt="SBI" 
+                  alt="SBI"
+                  width={96}
+                  height={48} 
                   className="h-12 w-auto object-contain"
                 />
                 {/* <span className="text-xs text-gray-600 uppercase tracking-wide">Startup Cell</span> */}
@@ -59,36 +68,44 @@ const Footer = () => {
               
               {/* Duplicate set for seamless loop */}
               <div className="flex-shrink-0 flex flex-col items-center space-y-3">
-                <img 
+                <Image 
                   src="/images/nvidia-logo.png" 
                   alt="NVIDIA" 
+                  width={192}
+                  height={96}
                   className="h-24 w-auto object-contain"
                 />
                 {/* <span className="text-xs text-gray-600 uppercase tracking-wide">INCEPTION PROGRAM</span> */}
               </div>
               
               <div className="flex-shrink-0 flex flex-col items-center space-y-3">
-                <img 
+                <Image 
                   src="/images/kerala-startup-mission-logo.png" 
                   alt="Kerala Startup Mission" 
+                  width={96}
+                  height={96}
                   className="h-24 w-auto object-contain"
                 />
                 {/* <span className="text-xs text-gray-600 uppercase tracking-wide">STARTUP MISSION</span> */}
               </div>
               
               <div className="flex-shrink-0 flex flex-col items-center space-y-3">
-                <img 
-                  src="/images/MeitY.png" 
+                <Image 
+                  src="/images/meity-startup-hub-logo.png" 
                   alt="MeitY Startup Hub" 
-                  className="h-28 w-auto object-contain"
+                  width={128}
+                  height={64}
+                  className="h-16 w-auto object-contain"
                 />
                 {/* <span className="text-xs text-gray-600 uppercase tracking-wide">Startup Hub</span> */}
               </div>
               
               <div className="flex-shrink-0 flex flex-col items-center space-y-3">
-                <img 
+                <Image 
                   src="/images/sbi-logo.png" 
                   alt="SBI" 
+                  width={128}
+                  height={64}
                   className="h-16 w-auto object-contain"
                 />
                 {/* <span className="text-xs text-gray-600 uppercase tracking-wide">Startup Cell</span> */}
@@ -115,6 +132,7 @@ const Footer = () => {
                 <p>Technopark, Phase I,</p>
                 <p>Kazhakoottam, Trivandrum</p>
                 <p>📧 Contact@zenturiotech.com</p>
+                <p>8129993666</p>
               </div>
             </div>
             

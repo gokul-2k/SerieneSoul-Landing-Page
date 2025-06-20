@@ -1,10 +1,10 @@
 "use client"
 import React from 'react';
-import { Heart, Activity, User } from 'lucide-react';
 import Lottie from 'lottie-react';
 import trackAnimation from '../../public/images/track.json';
 import understandAnimation from '../../public/images/understand.json';
 import healAnimation from '../../public/images/heal.json';
+import Image from 'next/image';
 
 const WhySereinsoulSection = () => {
   return (
@@ -32,9 +32,11 @@ const WhySereinsoulSection = () => {
               
               {/* Main image with enhanced styling */}
               <div className="relative z-10 p-8">
-                <img 
+                <Image 
                   src="/images/boy.png" 
                   alt="Mental wellness companion illustration"
+                  width={320}
+                  height={320}
                   className="w-80 h-80 object-contain filter drop-shadow-sm relative z-10"
                   style={{
                     filter: 'drop-shadow(0 10px 20px rgba(59, 130, 246, 0.1))'

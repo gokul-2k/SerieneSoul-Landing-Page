@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Image from 'next/image';
 
 const Hero = () => {
   return (
@@ -23,7 +24,7 @@ const Hero = () => {
       <nav className="relative z-10 flex flex-col items-center justify-center px-6 py-8">
         {/* Logo centered at the top */}
         <div className="flex flex-col items-center mb-4">
-          <img src="/images/logo.png" alt="Sereinsoul Logo" className="w-90 h-auto mb-2 -mt-17" />
+           <Image src="/images/logo.png" alt="Sereinsoul Logo" width={360} height={120} className="w-[360px] h-auto mb-2 -mt-[68px]" />
         </div>
         {/* Navigation dock centered below logo */}
         <div className="bg-black/30 backdrop-blur-md rounded-full px-4 py-2 md:px-8 md:py-4 items-center border border-white/20 flex justify-center -mt-20 overflow-x-auto max-w-full">
@@ -43,7 +44,7 @@ const Hero = () => {
           You Deserve Someone Who Listens
         </h1>
         <p className="text-lg md:text-xl text-white mb-8 max-w-2xl">
-          India's first AI-powered digital twin platform for<br />
+          India&apos;s first AI-powered digital twin platform for<br />
           sustainable mental well-being.
         </p>
       </div>

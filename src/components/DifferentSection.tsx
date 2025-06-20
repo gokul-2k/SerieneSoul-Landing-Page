@@ -1,6 +1,7 @@
 'use client'
 import React, { useState, useEffect } from 'react';
 import { Check, Shield, Brain, Heart, Cpu, Globe } from 'lucide-react';
+import Image from 'next/image';
 
 const features = [
   {
@@ -128,9 +129,11 @@ const DifferentSection = () => {
                   onClick={() => setActiveImageIndex(index)}
                 >
                   <div className="w-full h-full rounded-full overflow-hidden shadow-xl border-4 sm:border-6 lg:border-8 border-white hover:border-blue-300 transition-all duration-300">
-                    <img
+                    <Image
                       src={image}
                       alt={`Person ${index + 1}`}
+                      width={256}
+                      height={256}
                       className="w-full h-full object-cover"
                     />
                   </div>
