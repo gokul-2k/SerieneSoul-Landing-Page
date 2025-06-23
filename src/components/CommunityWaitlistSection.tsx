@@ -4,10 +4,10 @@ import { Mail, Users } from 'lucide-react';
 
 const CommunityWaitlistSection = () => {
   return (
-    <div className="bg-white py-16 px-4">
+    <div id="community" className="bg-white py-16 px-4">
       <div className="max-w-6xl mx-auto space-y-16">
         {/* Community Section */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center md:-mt-0 -mt-30">
           {/* Coming Soon Image */}
           <div className="flex justify-center lg:justify-start">
             <img 
@@ -18,7 +18,7 @@ const CommunityWaitlistSection = () => {
           </div>
           
           {/* Community Content */}
-          <div className="space-y-6">
+          <div className="space-y-6 md:-mt-0 -mt-30">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
               <span className="text-blue-500">Community:</span> You're Not Alone
             </h2>

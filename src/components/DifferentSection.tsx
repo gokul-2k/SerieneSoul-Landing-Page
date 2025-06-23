@@ -18,7 +18,7 @@ const features = [
   },
   {
     icon: <Shield className="w-5 h-5 text-blue-600" />,
-    text: "NVIDIA-supported tech"
+    text: "NVIDIA-supported innovation"
   },
   {
     icon: <Globe className="w-5 h-5 text-blue-600" />,
@@ -32,8 +32,8 @@ const features = [
 
 const images = [
   '/images/girl.jpg',
-  '/images/med.jpeg',
-  '/images/women2.png',
+  '/images/med.png',
+  '/images/IMG1.png',
 ];
 
 // Custom hook to detect mobile view
@@ -71,7 +71,7 @@ const DifferentSection = () => {
   };
 
   return (
-    <div className="bg-white py-16 px-4 relative overflow-x-hidden">
+    <div id="partners" className="bg-white py-16 px-4 relative overflow-x-hidden">
       {/* Ticker Button and Popout */}
       <div className="absolute left-10 top-8 z-20 flex items-center">
         {/* Ticker Button */}
@@ -85,7 +85,7 @@ const DifferentSection = () => {
         {/* Ticker Popout */}
         <div
           className={`transition-all duration-500 ease-in-out h-12 flex items-center pl-6 bg-gradient-to-br from-blue-600 to-blue-400 rounded-r-2xl shadow-lg ml-[-8px] ${tickerOpen ? 'w-[50vw] opacity-100' : 'w-0 opacity-0'} overflow-hidden`}
-          style={{ minWidth: tickerOpen ? '300px' : '0' }}
+          style={{ minWidth: tickerOpen ? '250px' : '0' }}
         >
           <span className="text-white font-semibold text-lg">Why SereinSoul is Different</span>
         </div>
@@ -115,7 +115,7 @@ const DifferentSection = () => {
           </div>
 
           {/* Image Side - Circular Animated Images with Click Cycling */}
-          <div className="relative h-96 lg:h-[420px] flex items-center justify-center">
+          <div className="relative h-96 lg:h-[420px] flex items-center justify-center md:-mt-0 -mt-20 md:-mb-0 -mb-20">
             {images.map((image, index) => {
               const position = getImagePosition(index, activeImageIndex);
               return (
