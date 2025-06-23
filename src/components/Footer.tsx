@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="py-12 px-4">
         <div className="max-w-6xl mx-auto text-center -mt-20">
           <h2 className="text-2xl md:text-3xl font-bold text-blue-600 mb-12">
-            Trusted. Backed. Secure.
+            Trusted. Backed. Secure
           </h2>
           
           {/* Trust Badges with Animation */}
