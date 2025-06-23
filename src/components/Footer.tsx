@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer className="bg-white">
       {/* Trust Section */}
-      <div className="py-12 px-4">
+      <div id="partners" className="py-12 px-4">
         <div className="max-w-6xl mx-auto text-center -mt-20">
           <h2 className="text-2xl md:text-3xl font-bold text-blue-600 mb-12">
             Trusted. Backed. Secure.
@@ -91,7 +91,7 @@ const Footer = () => {
               
               <div className="flex-shrink-0 flex flex-col items-center space-y-3">
                 <Image 
-                  src="/images/meity-startup-hub-logo.png" 
+                  src="/images/MeitY.png" 
                   alt="MeitY Startup Hub" 
                   width={128}
                   height={64}
@@ -155,6 +155,12 @@ const Footer = () => {
               </a>
             </div>
           </div>
+        </div>
+      </div>
+      <div id="contact" className="py-8 px-4 bg-gray-50">
+        <div className="max-w-6xl mx-auto text-center">
+          <h3 className="text-xl font-semibold text-gray-900 mb-4">Contact Us</h3>
+          <p className="text-gray-600">Have questions? Reach out to us at <a href="mailto:contact@sereinsoul.com" className="text-blue-600 hover:text-blue-800">contact@sereinsoul.com</a></p>
         </div>
       </div>
     </footer>

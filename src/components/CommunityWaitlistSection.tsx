@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 const CommunityWaitlistSection = () => {
   return (
-    <div className="bg-white py-16 px-4">
+    <div id="community" className="bg-white py-16 px-4">
       <div className="max-w-6xl mx-auto space-y-16">
         {/* Community Section */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
