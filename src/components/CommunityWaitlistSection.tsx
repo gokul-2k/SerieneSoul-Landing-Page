@@ -1,6 +1,6 @@
 "use client"
 import React from 'react';
-import { Mail, Users } from 'lucide-react';
+import { Mail } from 'lucide-react';
 
 const CommunityWaitlistSection = () => {
   return (
@@ -20,7 +20,7 @@ const CommunityWaitlistSection = () => {
           {/* Community Content */}
           <div className="space-y-6 md:-mt-0 -mt-30">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
-              <span className="text-blue-500">Community:</span> You're Not Alone
+              <span className="text-blue-500">Community:</span> You&apos;re Not Alone
             </h2>
             
             <p className="text-gray-700 leading-relaxed text-justify">

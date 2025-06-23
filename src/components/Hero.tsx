@@ -168,7 +168,7 @@ const Hero = () => {
                     onClick={(e) => {
                       e.preventDefault();
                       console.log('Partners button clicked'); // Debug log
-                      scrollToSection('partners');
+                      scrollToSection('contact');
                     }}
                     className="block text-white text-lg font-medium py-3 px-4 rounded-lg hover:bg-white/10 transition-all duration-300 border-l-2 border-transparent hover:border-blue-400 w-full text-left"
                   >
@@ -211,7 +211,7 @@ const Hero = () => {
             <li><button onClick={(e) => { e.preventDefault(); console.log('Desktop Home clicked'); scrollToSection('hero'); }} className="text-white hover:text-blue-400 transition-colors duration-500 block px-3 py-2" style={{color: 'white'}} onMouseEnter={(e) => (e.target as HTMLButtonElement).style.color = '#60a5fa'} onMouseLeave={(e) => (e.target as HTMLButtonElement).style.color = 'white'}>Home</button></li>
             <li><button onClick={(e) => { e.preventDefault(); console.log('Desktop Why Sereinsoul clicked'); scrollToSection('why-sereinsoul'); }} className="text-white hover:text-blue-400 transition-colors duration-500 block px-3 py-2" style={{color: 'white'}} onMouseEnter={(e) => (e.target as HTMLButtonElement).style.color = '#60a5fa'} onMouseLeave={(e) => (e.target as HTMLButtonElement).style.color = 'white'}>Why Sereinsoul</button></li>
             <li><button onClick={(e) => { e.preventDefault(); console.log('Desktop Community clicked'); scrollToSection('community'); }} className="text-white hover:text-blue-400 transition-colors duration-500 block px-3 py-2" style={{color: 'white'}} onMouseEnter={(e) => (e.target as HTMLButtonElement).style.color = '#60a5fa'} onMouseLeave={(e) => (e.target as HTMLButtonElement).style.color = 'white'}>Community</button></li>
-            <li><button onClick={(e) => { e.preventDefault(); console.log('Desktop Partners clicked'); scrollToSection('partners'); }} className="text-white hover:text-blue-400 transition-colors duration-500 block px-3 py-2" style={{color: 'white'}} onMouseEnter={(e) => (e.target as HTMLButtonElement).style.color = '#60a5fa'} onMouseLeave={(e) => (e.target as HTMLButtonElement).style.color = 'white'}>Partners & Recognition</button></li>
+            <li><button onClick={(e) => { e.preventDefault(); console.log('Desktop Partners clicked'); scrollToSection('contact'); }} className="text-white hover:text-blue-400 transition-colors duration-500 block px-3 py-2" style={{color: 'white'}} onMouseEnter={(e) => (e.target as HTMLButtonElement).style.color = '#60a5fa'} onMouseLeave={(e) => (e.target as HTMLButtonElement).style.color = 'white'}>Partners & Recognition</button></li>
             <li><button onClick={(e) => { e.preventDefault(); console.log('Desktop Contact clicked'); scrollToSection('contact'); }} className="text-white hover:text-blue-400 transition-colors duration-500 block px-3 py-2" style={{color: 'white'}} onMouseEnter={(e) => (e.target as HTMLButtonElement).style.color = '#60a5fa'} onMouseLeave={(e) => (e.target as HTMLButtonElement).style.color = 'white'}>Contact Us</button></li>
           </ul>
         </div>
