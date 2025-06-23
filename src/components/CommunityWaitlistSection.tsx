@@ -1,30 +1,26 @@
 "use client"
 import React from 'react';
-import { Mail } from 'lucide-react';
-import Image from 'next/image';
+import { Mail, Users } from 'lucide-react';
 
 const CommunityWaitlistSection = () => {
   return (
-    <div id="community" className="bg-white py-16 px-4">
+    <div className="bg-white py-16 px-4">
       <div className="max-w-6xl mx-auto space-y-16">
         {/* Community Section */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Coming Soon Image */}
           <div className="flex justify-center lg:justify-start">
-            <div className="relative">
-              <div className="bg-white rounded-2xl p-8 text-white text-center shadow-xl transform rotate-3 flex flex-col items-center justify-center">
-                {/* Coming Soon Static Image */}
-                <div className="w-32 h-32 flex items-center justify-center mx-auto">
-                  <Image src="/images/coming.png" alt="Coming Soon" width={128} height={128} className="w-full h-full object-contain" />
-                </div>
-              </div>
-            </div>
+            <img 
+              src="/images/coming.png" 
+              alt="Coming Soon" 
+              className="w-100 h-100 object-contain" 
+            />
           </div>
           
           {/* Community Content */}
           <div className="space-y-6">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
-              <span className="text-blue-500">Community:</span> You&apos;re Not Alone
+              <span className="text-blue-500">Community:</span> You're Not Alone
             </h2>
             
             <p className="text-gray-700 leading-relaxed text-justify">
@@ -65,11 +61,9 @@ const CommunityWaitlistSection = () => {
             {/* Waitlist Image */}
             <div className="flex justify-center lg:justify-end">
               <div className="relative">
-                <Image 
+                <img 
                   src="/images/med2.jpg" 
                   alt="Person at beach"
-                  width={320}
-                  height={320}
                   className="w-80 h-80 object-cover rounded-full shadow-2xl"
                 />
                 
