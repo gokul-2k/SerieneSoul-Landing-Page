@@ -201,12 +201,12 @@ const Hero = () => {
         )}
 
         {/* Logo centered at the top */}
-        <div className="flex flex-col items-center mb-4">
-           <Image src="/images/logo.png" alt="Sereinsoul Logo" width={360} height={120} className="w-[360px] h-auto mb-2 -mt-[68px]" />
+        <div className="flex flex-col items-center -mb-150 md:mb-8">
+           <Image src="/images/logo.png" alt="Sereinsoul Logo" width={360} height={120} className="w-[360px] h-auto mb-45 mt-0 md:-mt-[68px]" />
         </div>
         
         {/* Desktop Navigation - hidden on mobile */}
-        <div className="hidden md:block bg-black/30 backdrop-blur-md rounded-full px-14 py-5 items-center border border-white/20 -mt-20">
+        <div className="hidden md:block bg-black/30 backdrop-blur-md rounded-full px-14 py-5 items-center border border-white/20 -mt-20 -mb-60">
           <ul className="flex space-x-8 text-2xl justify-center">
             <li><button onClick={(e) => { e.preventDefault(); console.log('Desktop Home clicked'); scrollToSection('hero'); }} className="text-white hover:text-blue-400 transition-colors duration-500 block px-3 py-2" style={{color: 'white'}} onMouseEnter={(e) => (e.target as HTMLButtonElement).style.color = '#60a5fa'} onMouseLeave={(e) => (e.target as HTMLButtonElement).style.color = 'white'}>Home</button></li>
             <li><button onClick={(e) => { e.preventDefault(); console.log('Desktop Why Sereinsoul clicked'); scrollToSection('why-sereinsoul'); }} className="text-white hover:text-blue-400 transition-colors duration-500 block px-3 py-2" style={{color: 'white'}} onMouseEnter={(e) => (e.target as HTMLButtonElement).style.color = '#60a5fa'} onMouseLeave={(e) => (e.target as HTMLButtonElement).style.color = 'white'}>Why Sereinsoul</button></li>
@@ -218,7 +218,7 @@ const Hero = () => {
       </nav>
       
       {/* Hero Content */}
-      <div className=" -mt-58 relative z-10 flex flex-col items-center justify-center h-full text-center px-4 ">
+      <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-4 ">
         <h1 className="text-4xl md:text-6xl font-bold text-white mb-4">
           You Deserve Someone Who Listens
         </h1>

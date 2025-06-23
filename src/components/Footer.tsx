@@ -3,7 +3,7 @@ import { Home } from 'lucide-react';
 
 const Footer = () => {
   return (
-    <footer className="bg-white">
+    <footer id="contact" className="bg-white">
       {/* Trust Section */}
       <div className="py-12 px-4">
         <div className="max-w-6xl mx-auto text-center -mt-20">
@@ -22,7 +22,7 @@ const Footer = () => {
                 <img 
                   src="/images/nvidia-logo.png" 
                   alt="NVIDIA" 
-                  className="h-24 w-auto object-contain"
+                  className="h-18 w-auto object-contain"
                 />
                 {/* <span className="text-xs text-gray-600 uppercase tracking-wide">INCEPTION PROGRAM</span> */}
               </div>
@@ -42,7 +42,7 @@ const Footer = () => {
                 <img 
                   src="/images/MeitY.png" 
                   alt="MeitY Startup Hub" 
-                  className="h-28 w-auto object-contain"
+                  className="h-35 w-auto object-contain"
                 />
                 {/* <span className="text-xs text-gray-600 uppercase tracking-wide">Startup Hub</span> */}
               </div>
@@ -52,7 +52,7 @@ const Footer = () => {
                 <img 
                   src="/images/sbi-logo.png" 
                   alt="SBI" 
-                  className="h-12 w-auto object-contain"
+                  className="h-15 w-auto object-contain"
                 />
                 {/* <span className="text-xs text-gray-600 uppercase tracking-wide">Startup Cell</span> */}
               </div>
@@ -62,7 +62,7 @@ const Footer = () => {
                 <img 
                   src="/images/nvidia-logo.png" 
                   alt="NVIDIA" 
-                  className="h-24 w-auto object-contain"
+                  className="h-18 w-auto object-contain"
                 />
                 {/* <span className="text-xs text-gray-600 uppercase tracking-wide">INCEPTION PROGRAM</span> */}
               </div>
@@ -80,7 +80,7 @@ const Footer = () => {
                 <img 
                   src="/images/MeitY.png" 
                   alt="MeitY Startup Hub" 
-                  className="h-28 w-auto object-contain"
+                  className="h-35 w-auto object-contain"
                 />
                 {/* <span className="text-xs text-gray-600 uppercase tracking-wide">Startup Hub</span> */}
               </div>
@@ -89,7 +89,7 @@ const Footer = () => {
                 <img 
                   src="/images/sbi-logo.png" 
                   alt="SBI" 
-                  className="h-16 w-auto object-contain"
+                  className="h-15 w-auto object-contain"
                 />
                 {/* <span className="text-xs text-gray-600 uppercase tracking-wide">Startup Cell</span> */}
               </div>
@@ -115,8 +115,8 @@ const Footer = () => {
               </div>
               
               <div className="text-sm text-gray-600 text-center md:text-left leading-relaxed -mt-17">
-                <p>Technopark, Phase I,</p>
-                <p>Kazhakoottam, Trivandrum</p>
+                <p>🏢Technopark Phase I, Kazhakoottam, Trivandrum</p>
+                
                 <p>📧 Contact@zenturiotech.com</p>
                 <p>📞 +91 8129993666</p>
               </div>

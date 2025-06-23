@@ -26,26 +26,35 @@ const WhySereinsoulSection = () => {
               </div>
               
               {/* Decorative elements */}
-              <div className="absolute top-8 right-8 w-4 h-4 bg-blue-200 rounded-full opacity-60"></div>
-              <div className="absolute bottom-12 left-4 w-6 h-6 bg-indigo-100 rounded-full opacity-70"></div>
-              <div className="absolute top-20 left-8 w-3 h-3 bg-blue-300 rounded-full opacity-50"></div>
+              <div className="absolute top-8 right-8 w-4 h-4 bg-blue-200 rounded-full opacity-60" style={{ animation: 'spin 6s linear infinite' }}></div>
+              <div className="absolute bottom-12 left-4 w-6 h-6 bg-indigo-100 rounded-full opacity-70 float-animate"></div>
+              <div className="absolute top-20 left-8 w-3 h-3 bg-blue-300 rounded-full opacity-50 scale-pulse"></div>
               
               {/* Main image with enhanced styling */}
-              <div className="relative z-10 p-8">
-                <Image 
-                  src="/images/boy.png" 
-                  alt="Mental wellness companion illustration"
-                  width={320}
-                  height={320}
-                  className="w-80 h-80 object-contain filter drop-shadow-sm relative z-10"
-                  style={{
-                    filter: 'drop-shadow(0 10px 20px rgba(59, 130, 246, 0.1))'
-                  }}
-                />
+              <div className="relative flex items-center justify-center w-[320px] h-[320px] mx-auto">
+                {/* Orbiting Circles */}
+                <div className="absolute inset-0 orbit-animate pointer-events-none">
+                  <div className="absolute top-0 left-1/2 -translate-x-1/2 w-4 h-4 bg-blue-200 rounded-full opacity-60"></div>
+                  <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-6 h-6 bg-indigo-100 rounded-full opacity-70"></div>
+                  <div className="absolute left-0 top-1/2 -translate-y-1/2 w-3 h-3 bg-blue-300 rounded-full opacity-50"></div>
+                  <div className="absolute right-0 top-1/2 -translate-y-1/2 w-5 h-5 bg-blue-400 rounded-full opacity-40"></div>
+                </div>
+                {/* Boy Image */}
+                <div className="relative z-10 p-8">
+                  <Image 
+                    src="/images/boy.png" 
+                    alt="Mental wellness companion illustration"
+                    width={320}
+                    height={320}
+                    className="w-80 h-80 object-contain filter drop-shadow-sm"
+                    style={{
+                      filter: 'drop-shadow(0 10px 20px rgba(59, 130, 246, 0.1))'
+                    }}
+                  />
+                </div>
+                {/* Subtle glow effect */}
+                <div className="absolute inset-0 bg-gradient-to-br from-transparent via-blue-50/20 to-indigo-50/50 rounded-full blur-xl"></div>
               </div>
-              
-              {/* Subtle glow effect */}
-              <div className="absolute inset-0 bg-gradient-to-br from-transparent via-blue-50/20 to-indigo-50/50 rounded-full blur-xl"></div>
             </div>
           </div>
           
@@ -74,7 +83,7 @@ const WhySereinsoulSection = () => {
         </div>
         
         {/* Single Feature Box with Light Fade Background */}
-        <div className="mt-24 relative">
+        <div className="mt-24 relative bg-black/30 bg-opacity-50 rounded-xl">
           
           {/* How it Works Button - Positioned to overlap the box below */}
           <div className="absolute top-0 left-1/2 -translate-x-1/2 z-10">
