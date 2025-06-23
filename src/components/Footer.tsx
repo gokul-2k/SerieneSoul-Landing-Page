@@ -125,7 +125,7 @@ const Footer = () => {
             <div className="flex flex-col items-center space-y-2">
               <span className="text-sm text-gray-600">Powered by</span>
               <img 
-                src="/images/ZenturioTech_Logo.PNG" 
+                src="/images/zen-tech.png" 
                 alt="ZenturioTECH" 
                 className="h-6 w-auto object-contain"
               />
