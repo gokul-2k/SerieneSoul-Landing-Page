@@ -8,7 +8,7 @@ import Image from 'next/image';
 
 const WhySereinsoulSection = () => {
   return (
-    <div className="bg-gradient-to-b from-transparent to-gray-50 py-16 px-4">
+    <div id="why-sereinsoul" className="bg-white py-16 px-4 -mt-18">
       <div className="max-w-6xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Enhanced Character Image with Blended Background */}
@@ -84,7 +84,7 @@ const WhySereinsoulSection = () => {
           </div>
           
           {/* Single Feature Box */}
-          <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-lg border border-gray-100">
+          <div className="bg-grey/200 backdrop-blur-sm rounded-2xl p-8 shadow-lg border border-gray-100">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 pt-8">
               {/* Track Card */}
               <div className="text-center">
