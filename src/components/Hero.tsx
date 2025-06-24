@@ -102,7 +102,7 @@ const Hero = () => {
       </video>
       
       {/* Overlay*/}
-      <div className="absolute top-0 left-0 w-full h-full bg-blue/10 bg-opacity-40"></div>
+      <div className="absolute top-0 left-0 w-full h-full bg-blue-900/25 bg-opacity-40"></div>
       
       {/* Navigation */}
       <nav className="relative z-50 flex flex-col items-center justify-center px-4 pt-8 pb-4">
