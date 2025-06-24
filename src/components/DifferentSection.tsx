@@ -1,7 +1,6 @@
 'use client'
 import React, { useState, useEffect } from 'react';
 import { Check, Shield, Brain, Heart, Cpu, Globe } from 'lucide-react';
-import Image from 'next/image';
 
 const features = [
   {
@@ -87,7 +86,7 @@ const DifferentSection = () => {
           className={`transition-all duration-500 ease-in-out h-12 flex items-center pl-6 bg-gradient-to-br from-blue-600 to-blue-400 rounded-r-2xl shadow-lg ml-[-8px] ${tickerOpen ? 'w-[50vw] opacity-100' : 'w-0 opacity-0'} overflow-hidden`}
           style={{ minWidth: tickerOpen ? '250px' : '0' }}
         >
-          <span className="text-white font-semibold text-lg">Why SereinSoul is Different</span>
+          <span className="text-white font-semibold text-sm md:text-lg">No judgement, No jargon, Just a smarter way to feel better</span>
         </div>
       </div>
 
@@ -129,7 +128,7 @@ const DifferentSection = () => {
                   onClick={() => setActiveImageIndex(index)}
                 >
                   <div className="w-full h-full rounded-full overflow-hidden shadow-xl border-4 sm:border-6 lg:border-8 border-white hover:border-blue-300 transition-all duration-300">
-                    <Image
+                    <img
                       src={image}
                       alt={`Person ${index + 1}`}
                       width={256}

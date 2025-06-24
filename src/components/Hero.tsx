@@ -1,7 +1,6 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
-import Image from 'next/image';
 
 const Hero = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -106,9 +105,9 @@ const Hero = () => {
       <div className="absolute top-0 left-0 w-full h-full bg-blue/10 bg-opacity-40"></div>
       
       {/* Navigation */}
-      <nav className="relative z-50 flex flex-col items-center justify-center px-6 py-8">
+      <nav className="relative z-50 flex flex-col items-center justify-center px-4 pt-8 pb-4">
         {/* Mobile Hamburger Menu - Top Left */}
-        <div className="absolute top-8 left-6 z-[60] md:hidden">
+        <div className="absolute top-6 left-4 z-[60] lg:hidden">
           <button
             onClick={toggleMobileMenu}
             className="p-2 rounded-lg bg-black/20 backdrop-blur-sm border border-white/10 transition-all duration-300 hover:bg-black/30"
@@ -123,7 +122,7 @@ const Hero = () => {
         </div>
 
         {/* Mobile Sidebar */}
-        <div className={`fixed inset-y-0 left-0 z-[55] w-80 bg-black/30 backdrop-blur-xl border-r border-white/20 transform transition-transform duration-500 ease-in-out md:hidden ${isMobileMenuOpen ? 'translate-x-0' : '-translate-x-full'}`}>
+        <div className={`fixed inset-y-0 left-0 z-[55] w-80 bg-black/30 backdrop-blur-xl border-r border-white/20 transform transition-transform duration-500 ease-in-out lg:hidden ${isMobileMenuOpen ? 'translate-x-0' : '-translate-x-full'}`}>
           <div className="flex flex-col h-full pt-20 px-6">
             <div className="flex-1">
               <ul className="space-y-6">
@@ -195,19 +194,19 @@ const Hero = () => {
         {/* Mobile Overlay */}
         {isMobileMenuOpen && (
           <div 
-            className="fixed inset-0 bg-black/50 z-[45] md:hidden transition-opacity duration-300"
+            className="fixed inset-0 bg-black/50 z-[45] lg:hidden transition-opacity duration-300"
             onClick={toggleMobileMenu}
           ></div>
         )}
 
         {/* Logo centered at the top */}
-        <div className="flex flex-col items-center -mb-150 md:mb-1">
-           <Image src="/images/logo.png" alt="Sereinsoul Logo" width={360} height={120} className="w-[360px] h-auto mb-45 mt-0 md:-mt-[10px]" />
+        <div className="flex flex-col items-center mb-0 mt-2">
+           <img src="/images/logo.png" alt="Sereinsoul Logo" width={320} height={110} className="w-[320px] h-auto -mb-10 mt-0" />
         </div>
         
-        {/* Desktop Navigation - hidden on mobile */}
-        <div className="hidden md:block bg-black/30 backdrop-blur-md rounded-full px-14 py-5 items-center border border-white/20 -mt-50 -mb-60 md:-mt-60">
-          <ul className="flex space-x-8 text-2xl justify-center">
+        {/* Desktop Navigation - hidden on mobile and tablet */}
+        <div className="hidden lg:flex bg-black/30 backdrop-blur-md rounded-full px-10 py-3 items-center border border-white/20 mb-4">
+          <ul className="flex space-x-6 text-lg justify-center">
             <li><button onClick={(e) => { e.preventDefault(); console.log('Desktop Home clicked'); scrollToSection('hero'); }} className="text-white hover:text-blue-400 transition-colors duration-500 block px-3 py-2" style={{color: 'white'}} onMouseEnter={(e) => (e.target as HTMLButtonElement).style.color = '#60a5fa'} onMouseLeave={(e) => (e.target as HTMLButtonElement).style.color = 'white'}>Home</button></li>
             <li><button onClick={(e) => { e.preventDefault(); console.log('Desktop Why Sereinsoul clicked'); scrollToSection('why-sereinsoul'); }} className="text-white hover:text-blue-400 transition-colors duration-500 block px-3 py-2" style={{color: 'white'}} onMouseEnter={(e) => (e.target as HTMLButtonElement).style.color = '#60a5fa'} onMouseLeave={(e) => (e.target as HTMLButtonElement).style.color = 'white'}>Why Sereinsoul</button></li>
             <li><button onClick={(e) => { e.preventDefault(); console.log('Desktop Community clicked'); scrollToSection('community'); }} className="text-white hover:text-blue-400 transition-colors duration-500 block px-3 py-2" style={{color: 'white'}} onMouseEnter={(e) => (e.target as HTMLButtonElement).style.color = '#60a5fa'} onMouseLeave={(e) => (e.target as HTMLButtonElement).style.color = 'white'}>Community</button></li>
@@ -218,7 +217,7 @@ const Hero = () => {
       </nav>
       
       {/* Hero Content */}
-      <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-4 ">
+      <div className="relative z-10 flex flex-col items-center text-center px-4 mt-4">
         <h1 className="text-4xl md:text-6xl font-bold text-white mb-4">
           You Deserve Someone Who Listens
         </h1>

@@ -1,5 +1,4 @@
 import React from 'react';
-import Image from 'next/image';
 
 const BuiltForYouSection = () => {
   return (
@@ -24,7 +23,7 @@ const BuiltForYouSection = () => {
           {/* Image Side */}
           <div className="flex justify-center lg:justify-end mt-10 lg:mt-0 md:-mt-0 -mt-20 md:-mb-0 -mb-20">
             <div className="relative">
-              <Image 
+              <img
                 src="/images/women2.png" 
                 alt="Woman with laptop"
                 width={384}

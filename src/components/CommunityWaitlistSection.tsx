@@ -50,7 +50,7 @@ const CommunityWaitlistSection = () => {
               
               <div className="flex items-center space-x-4">
                 <Mail className="w-6 h-6 text-blue-300" />
-                <span className="text-blue-100">contact@zenturotech.com</span>
+                <span className="text-blue-100">contact@zenturiotech.com</span>
               </div>
               
               <button className="bg-red-500 hover:bg-red-600 text-white px-8 py-3 rounded-full font-medium transition-colors">

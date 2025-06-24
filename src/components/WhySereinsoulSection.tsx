@@ -4,7 +4,6 @@ import Lottie from 'lottie-react';
 import trackAnimation from '../../public/images/track.json';
 import understandAnimation from '../../public/images/understand.json';
 import healAnimation from '../../public/images/heal.json';
-import Image from 'next/image';
 
 const WhySereinsoulSection = () => {
   return (
@@ -16,13 +15,22 @@ const WhySereinsoulSection = () => {
             <div className="relative">
               {/* Soft background circles for blending */}
               <div className="absolute inset-0 flex items-center justify-center">
-                <div className="w-96 h-96 bg-gradient-to-br from-blue-50 to-indigo-50 rounded-full opacity-60"></div>
+                <div className="w-80 h-80 bg-gradient-to-br from-purple-200 via-blue-200 to-indigo-300 rounded-full opacity-70 animate-pulse"></div>
               </div>
+              
+              {/* Middle circle - contrasting gradient */}
               <div className="absolute inset-0 flex items-center justify-center">
-                <div className="w-80 h-80 bg-gradient-to-tr from-white to-blue-50 rounded-full opacity-80"></div>
+                <div className="w-60 h-60 bg-gradient-to-tr from-blue-100 via-indigo-100 to-purple-200 rounded-full opacity-85 shadow-md"></div>
               </div>
+              
+              {/* Inner circle - clean white with stronger shadow */}
               <div className="absolute inset-0 flex items-center justify-center">
-                <div className="w-64 h-64 bg-white rounded-full opacity-90 shadow-lg"></div>
+                <div className="w-40 h-40 bg-gradient-to-br from-white to-blue-50 rounded-full opacity-95 shadow-xl border border-blue-100"></div>
+              </div>
+              
+              {/* Center accent - optional small dot for focus */}
+              <div className="absolute inset-0 flex items-center justify-center">
+                <div className="w-4 h-4 bg-gradient-to-br from-indigo-400 to-purple-500 rounded-full shadow-sm"></div>
               </div>
               
               {/* Decorative elements */}
@@ -41,7 +49,7 @@ const WhySereinsoulSection = () => {
                 </div>
                 {/* Boy Image */}
                 <div className="relative z-10 p-8">
-                  <Image 
+                  <img
                     src="/images/boy.png" 
                     alt="Mental wellness companion illustration"
                     width={320}
@@ -83,7 +91,7 @@ const WhySereinsoulSection = () => {
         </div>
         
         {/* Single Feature Box with Light Fade Background */}
-        <div className="mt-24 relative bg-black/30 bg-opacity-50 rounded-xl">
+        <div className="mt-24 relative bg-white bg-opacity-50 rounded-xl">
           
           {/* How it Works Button - Positioned to overlap the box below */}
           <div className="absolute top-0 left-1/2 -translate-x-1/2 z-10">
@@ -93,8 +101,8 @@ const WhySereinsoulSection = () => {
           </div>
           
           {/* Single Feature Box */}
-          <div className="bg-grey/200 backdrop-blur-sm rounded-2xl p-8 shadow-lg border border-gray-100">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 pt-8">
+          <div className="bg-gray-200 backdrop-blur-sm rounded-3xl p-6 md:p-8 shadow-lg border border-gray-300">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 pt-8">
               {/* Track Card */}
               <div className="text-center">
                 <div className="w-20 h-20 bg-blue-200 rounded-full flex items-center justify-center mx-auto mb-4">
